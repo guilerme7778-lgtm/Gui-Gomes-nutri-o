@@ -1,0 +1,43 @@
+MEU PROGRESSO — GUI GOMES | NUTRIÇÃO INTELIGENTE
+PACOTE DE PUBLICAÇÃO ESTÁTICA — VERSÃO 24
+
+CONTEÚDO
+- index.html: aplicativo principal.
+- favicon.svg: ícone do site.
+- politica-de-privacidade.html: política informativa da versão sem login.
+- termos-de-uso.html: termos informativos.
+- _headers e netlify.toml: cabeçalhos e configuração para Netlify.
+- vercel.json: cabeçalhos para Vercel.
+- robots.txt: orientação básica para robôs de busca.
+
+PUBLICAR NO NETLIFY (opção mais simples)
+1. Extraia este ZIP no computador.
+2. Entre em https://app.netlify.com/drop e faça login/crie uma conta.
+3. Arraste a pasta extraída (a pasta que contém index.html) para a área de publicação.
+4. Aguarde o deploy e abra a URL *.netlify.app fornecida.
+5. Teste no celular e no computador: salvar perfil, recarregar, trocar alimentos, alterar quantidades e gerar/imprimir o PDF.
+
+PUBLICAR NO VERCEL
+1. Coloque todos os arquivos desta pasta em um repositório Git (GitHub, por exemplo).
+2. Entre em https://vercel.com/new e importe o repositório.
+3. Para este site estático, não selecione framework; deixe o comando de build vazio e a pasta de saída como ./ (raiz).
+4. Publique e abra a URL *.vercel.app. O arquivo vercel.json já define cabeçalhos de segurança.
+
+ANTES DE DIVULGAR AO PÚBLICO
+1. Abra politica-de-privacidade.html e substitua [INFORMAR E-MAIL OU CANAL OFICIAL DE CONTATO] por um contato real do responsável.
+2. Revise a política e os termos com orientação jurídica adequada à sua operação. Estes textos são minutas informativas, não certificação de conformidade legal.
+3. Faça um teste funcional no endereço publicado, inclusive impressão em PDF no Android, iPhone e desktop.
+4. Não anuncie a ferramenta como prescrição individualizada ou como cálculo clinicamente validado. Os valores de composição dos alimentos ainda precisam de conferência sistemática com fontes de composição adequadas; o aplicativo apresenta estimativas educativas.
+5. Não insira credenciais, senhas ou chaves privadas no HTML. O site não precisa de variáveis de ambiente nem de banco de dados para esta versão.
+
+COMO FUNCIONA O ARMAZENAMENTO
+O perfil fica no localStorage do navegador, associado ao domínio. Ele não sincroniza entre dispositivos e não é enviado a uma conta do aplicativo. Limpar os dados do site no navegador remove o perfil salvo. A hospedagem ainda pode processar registros técnicos de acesso.
+
+VALIDAÇÃO REALIZADA NA PREPARAÇÃO
+- Arquivo HTML preservado como index.html e metadados de compartilhamento adicionados.
+- JavaScript submetido a verificação de sintaxe Node.js.
+- JSON de configuração Vercel validado.
+- Estrutura do ZIP e presença dos arquivos verificada.
+- Não foi possível concluir execução automatizada em navegador neste ambiente; o Chromium encerrou por timeout. A impressão em PDF e os fluxos interativos precisam ser testados após o deploy.
+
+Versão 24 — 17/11/2026
